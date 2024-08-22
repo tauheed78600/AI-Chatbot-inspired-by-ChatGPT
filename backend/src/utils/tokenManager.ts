@@ -1,7 +1,6 @@
 import Jwt from "jsonwebtoken"
 import { Request, Response, NextFunction } from 'express'
 import { COOKIE_NAME } from "./constants.js"
-import { resolve } from "path"
 
 export const createToken = (id: string, email: string, expiresIn: string) =>{
     const payload = {id, email}
